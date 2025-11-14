@@ -31,6 +31,12 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+if (app.Environment.IsProduction())
+{
+    var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+    app.Urls.Add($"http://0.0.0.0:{port}");
+}
+
 app.UseHttpsRedirection();
 app.UseCors("reactApp");
 app.UseAuthorization();
