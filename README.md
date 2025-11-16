@@ -87,3 +87,6 @@ Deployment:
 
     Backend: Render
     Frontend: Vercel
+
+<img width="2571" height="976" alt="image" src="https://github.com/user-attachments/assets/6be04a53-f33a-4cc2-aba7-1bedea9b3dc0" />
+
